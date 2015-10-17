@@ -1,17 +1,17 @@
 from setuptools import setup, Extension
 
 rotor = Extension('rotor',
-	sources=['rotor/rotormodule.c']
+	sources=['rotor/rotormodule.c'],
 	depends=['rotor/rotormodule.c']
 	)
 
 setup(
-	name = 'rotormodule',
+	name = 'rotor',
 	version = '1.0',
 	description = 'The Rotor Module',
-	ext_modules = [rotor]
-  	packages = ['rotormodule'],
-  	author = 'Lance Ellinghouse'
+	ext_modules = [rotor],
+  	packages = ['rotor'],
+  	author = 'Lance Ellinghouse',
   	url = 'https://github.com/sarlalian/rotormodule',
   	keywords = ['encryption', 'logging', 'example'], # arbitrary keywords
 	classifiers=[
